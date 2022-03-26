@@ -4,7 +4,7 @@ from pync import Notifier
 import json
 
 host = '127.0.0.1'
-port = 1830
+port = 1890
 topic = 'm4/iot/minyak'
 
 def is_json(myjson):
