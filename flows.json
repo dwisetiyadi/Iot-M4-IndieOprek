@@ -1,0 +1,716 @@
+[
+    {
+        "id": "e73d2d0181abc0a8",
+        "type": "tab",
+        "label": "MQTT Broker",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f691dcbb928e45a8",
+        "type": "tab",
+        "label": "M4 - IndieOprek IoT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8ab80d3f51fad547",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": "1890",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0258f88a7a396d09",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c2c21381f39545b8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "649752b908f625b9",
+        "type": "ui_group",
+        "name": "Home",
+        "tab": "0258f88a7a396d09",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5aaa01efc9f6d17e",
+        "type": "ui_tab",
+        "name": "Harga Minyak",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a79ed848ce45a410",
+        "type": "ui_group",
+        "name": "Harga Minyak",
+        "tab": "5aaa01efc9f6d17e",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "07f95cd4a42c13a6",
+        "type": "ui_spacer",
+        "z": "f691dcbb928e45a8",
+        "name": "spacer",
+        "group": "a79ed848ce45a410",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a336357562b8d47d",
+        "type": "ui_spacer",
+        "z": "f691dcbb928e45a8",
+        "name": "spacer",
+        "group": "a79ed848ce45a410",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8a5d25a9ed7f215c",
+        "type": "blynk-iot-client",
+        "name": "",
+        "path": "blynk.cloud",
+        "key": "IEe5lwmzWpRZ9dleQCmrCc-1yAbjm1xM",
+        "tmpl": "TMPLf_4vObeC",
+        "dbg_all": true,
+        "dbg_read": true,
+        "dbg_prop": true,
+        "dbg_sync": true,
+        "dbg_low": true,
+        "dbg_pins": "",
+        "multi_cmd": false,
+        "enabled": true
+    },
+    {
+        "id": "74b6baf59377848f",
+        "type": "aedes broker",
+        "z": "e73d2d0181abc0a8",
+        "name": "",
+        "mqtt_port": "1890",
+        "mqtt_ws_bind": "path",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "/dwi",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "f2f364aebfd31296"
+            ],
+            [
+                "90f31af10fe30bbb"
+            ]
+        ]
+    },
+    {
+        "id": "f2f364aebfd31296",
+        "type": "debug",
+        "z": "e73d2d0181abc0a8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "90f31af10fe30bbb",
+        "type": "debug",
+        "z": "e73d2d0181abc0a8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "df666b723254d73d",
+        "type": "inject",
+        "z": "f691dcbb928e45a8",
+        "name": "Test publish",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Test publish MQTT from Nodered",
+        "payloadType": "str",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "0258babe35747d52"
+            ]
+        ]
+    },
+    {
+        "id": "0258babe35747d52",
+        "type": "mqtt out",
+        "z": "f691dcbb928e45a8",
+        "name": "",
+        "topic": "m4/iot/minyak",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8ab80d3f51fad547",
+        "x": 600,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e8f18bfe20ce3c14",
+        "type": "mqtt in",
+        "z": "f691dcbb928e45a8",
+        "name": "",
+        "topic": "m4/iot/minyak",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "8ab80d3f51fad547",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "572ee3a17ec09575"
+            ]
+        ]
+    },
+    {
+        "id": "a8a1e9599d13addf",
+        "type": "debug",
+        "z": "f691dcbb928e45a8",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "bae6e9ef735029e3",
+        "type": "http request",
+        "z": "f691dcbb928e45a8",
+        "name": "Get from source",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "https://hargapangan.id/index.php",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 260,
+        "y": 400,
+        "wires": [
+            [
+                "541e6d7463b0db2d"
+            ]
+        ]
+    },
+    {
+        "id": "37c4c92c3e62f3b8",
+        "type": "inject",
+        "z": "f691dcbb928e45a8",
+        "name": "Trigger / hours",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "86400",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "52e2c81562a1e8c6"
+            ]
+        ]
+    },
+    {
+        "id": "541e6d7463b0db2d",
+        "type": "function",
+        "z": "f691dcbb928e45a8",
+        "name": "Parse data",
+        "func": "var d = new Date();\nvar minyak = JSON.parse(msg.payload);\n\nmsg.ndata = {\n    status: minyak.prices[18].status,\n    title: minyak.prices[18].title,\n    price: parseInt(minyak.prices[18].price.replace(/Rp|\\./gi, \"\")),\n    denom: minyak.prices[18].denom.replace(/Per /gi, \"\"),\n    province: \"DKI Jakarta\",\n    updated_at: d.toLocaleString('en-US', {timeZone: 'Asia/Jakarta'})\n};\nmsg.method = \"GET\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 460,
+        "wires": [
+            [
+                "03edfdfbac1808f0",
+                "83ad347fbd743bbf"
+            ]
+        ]
+    },
+    {
+        "id": "b01ac963a2b3d31e",
+        "type": "http request",
+        "z": "f691dcbb928e45a8",
+        "name": "Save to Firebase",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://indieoprekiot-default-rtdb.firebaseio.com/minyakgoreng.json?auth=HqffGFVE0RsBMLjo132zxr57Vjd3GKEVqzOHzsFK",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 770,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "572ee3a17ec09575",
+        "type": "function",
+        "z": "f691dcbb928e45a8",
+        "name": "Parse data",
+        "func": "function isJsonString(str) {\n    try {\n        JSON.parse(str);\n    } catch (e) {\n        return false;\n    }\n    return true;\n}\n\nif (isJsonString(msg.payload)) {\n    msg.payload = JSON.parse(msg.payload);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 160,
+        "wires": [
+            [
+                "a8a1e9599d13addf"
+            ]
+        ]
+    },
+    {
+        "id": "8dd5afe569abe633",
+        "type": "mqtt out",
+        "z": "f691dcbb928e45a8",
+        "name": "",
+        "topic": "m4/iot/minyak",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8ab80d3f51fad547",
+        "x": 760,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "52e2c81562a1e8c6",
+        "type": "function",
+        "z": "f691dcbb928e45a8",
+        "name": "Prepare query",
+        "func": "msg.payload = {\n    \"option\": \"com_gtpihps\",\n    \"task\": \"json.commodityPrices\",\n    \"province_id\": \"13\",\n    \"price_type_id\": \"1\",\n    \"_\": msg.payload\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 340,
+        "wires": [
+            [
+                "bae6e9ef735029e3"
+            ]
+        ]
+    },
+    {
+        "id": "03edfdfbac1808f0",
+        "type": "http request",
+        "z": "f691dcbb928e45a8",
+        "name": "Get Current Data Firebase",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://indieoprekiot-default-rtdb.firebaseio.com/minyakgoreng.json?auth=HqffGFVE0RsBMLjo132zxr57Vjd3GKEVqzOHzsFK",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 520,
+        "y": 360,
+        "wires": [
+            [
+                "eacac397d93e0890"
+            ]
+        ]
+    },
+    {
+        "id": "eacac397d93e0890",
+        "type": "function",
+        "z": "f691dcbb928e45a8",
+        "name": "Prepare query",
+        "func": "if (msg.payload !== 'null') {\n    let cdata = JSON.parse(msg.payload);\n    msg.payload = [...cdata, msg.ndata];\n} else {\n    msg.payload = [msg.ndata];\n}\n\nmsg.method = \"PUT\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 420,
+        "wires": [
+            [
+                "b01ac963a2b3d31e"
+            ]
+        ]
+    },
+    {
+        "id": "83ad347fbd743bbf",
+        "type": "function",
+        "z": "f691dcbb928e45a8",
+        "name": "Parse data",
+        "func": "msg.payload = msg.ndata;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 500,
+        "wires": [
+            [
+                "8dd5afe569abe633"
+            ]
+        ]
+    },
+    {
+        "id": "b1ef31f05139cf24",
+        "type": "mqtt in",
+        "z": "f691dcbb928e45a8",
+        "name": "",
+        "topic": "m4/iot/minyak",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "8ab80d3f51fad547",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 600,
+        "wires": [
+            [
+                "25aacf946d02fec4"
+            ]
+        ]
+    },
+    {
+        "id": "25aacf946d02fec4",
+        "type": "http request",
+        "z": "f691dcbb928e45a8",
+        "name": "Get Current Data Firebase",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://indieoprekiot-default-rtdb.firebaseio.com/minyakgoreng.json?auth=HqffGFVE0RsBMLjo132zxr57Vjd3GKEVqzOHzsFK",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 340,
+        "y": 640,
+        "wires": [
+            [
+                "5c6d53971c2d3e4c"
+            ]
+        ]
+    },
+    {
+        "id": "5c6d53971c2d3e4c",
+        "type": "function",
+        "z": "f691dcbb928e45a8",
+        "name": "Parse data",
+        "func": "let data = [];\nlet cdata = JSON.parse(msg.payload);\n\nlet countCData = cdata.length - 1;\n\nmsg.payload = cdata[countCData].price;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 680,
+        "wires": [
+            [
+                "f25f477ed3ee8ad6",
+                "9f2595c7a16c12f3",
+                "25252b3335c37455"
+            ]
+        ]
+    },
+    {
+        "id": "f25f477ed3ee8ad6",
+        "type": "debug",
+        "z": "f691dcbb928e45a8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "1462e657921374c2",
+        "type": "ui_text",
+        "z": "f691dcbb928e45a8",
+        "group": "649752b908f625b9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 110,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "9f2595c7a16c12f3",
+        "type": "ui_chart",
+        "z": "f691dcbb928e45a8",
+        "name": "",
+        "group": "a79ed848ce45a410",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Kemasan Bermerk 1 - DKI Jakarta",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "no data available",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 820,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25252b3335c37455",
+        "type": "blynk-iot-out-write",
+        "z": "f691dcbb928e45a8",
+        "name": "Blynk Dashboard",
+        "pin": "1",
+        "pinmode": 0,
+        "client": "8a5d25a9ed7f215c",
+        "x": 770,
+        "y": 680,
+        "wires": []
+    }
+]
