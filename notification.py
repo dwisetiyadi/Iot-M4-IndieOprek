@@ -3,8 +3,8 @@ import paho.mqtt.client as mqtt
 from pync import Notifier
 import json
 
-host = 'dwi.nodered.indieoprek.id'
-port = 1890
+host = '127.0.0.1'
+port = 1830
 topic = 'm4/iot/minyak'
 
 def is_json(myjson):
